@@ -88,7 +88,7 @@ float mapp(float control){
   void right (float control)
   {     float z = mapp(control);
     digitalWrite(FMdir,HIGH);
-    analogWrite(LMpwm,z);
+    analogWrite(FMpwm,z);
     digitalWrite(RMdir,LOW);
     analogWrite(RMpwm,z);
     digitalWrite(LMdir,LOW);
